@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '8'
+- '10'
+cache: yarn
+script: yarn ci
+deploy:
+  provider: npm
+  email: igor@kamyshev.me
+  skip_cleanup: true
+  api_key:
+    secure: IEwmarBFW1PIfGJrLWBtqCKG9lM1mN9bJKDey/POVGlsJkwn/x/nNOaf6FQwzkeYyjZqVhRvwWBUHsyh7mXGRBJPg3yT9+T1wzHJtWN+JphKcL/2onBZzXNGiS/yMrrazOP7qduDOIGWVSp+Ivn8MMqvDMT+Zteng+rIrBB2r7vNPVnO6/LwO40Q/H9W5g30bSWkcNSW+YRe4+ZsFx+3GGDSPQvBlh1Ih3ENRUms5Dbj7SScPfgEDtYjKJFZq5kIUbDh4jamfpLsynZbXkTm3wJlU9439e9a9iTBLtwQNu5/Mzm6cdKSDByYDf4r1C51B8ZreF6t8OLYWmrVDp4Y2uxno0XrOjkd5MDVT1QcvrwFSaSG2QqE/ycnYAvq5Rs6GkXWcg8QxicZcQ3R6iP6ZQpI2PbJudd6VWg2vJHl4M2j2yPGFzaO7aKEzAyYsBplLAQ1PQ40NKcsAv4cBuTQCF2SY6TcTtYG6/GHw4ORVueFYaRhYsYfw9AKzGxi5vUBopCAZqn/YyDfZtJO9e+yZHKGwowyrzdQa5WCAGPvolPR57ka4c8gFVcMSyfododBcfGKLTq6xsblYIqH54LvXmb+sUB3l8c5AbXsV/eVUfzqkcBWX5jF2YNLgn/EYFXVDxaclGg88QhWw+x0ROkpM+igF6u9rwirbFOpo/bjjyo=
+  on:
+    tags: true
+    repo: breadhead/form-saver

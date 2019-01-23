@@ -1,0 +1,6 @@
+{
+  "extends": ["@solid-soda/tslint-config"],
+  "linterOptions": {
+    "exclude": ["**/*.js", "node_modules/**/*"]
+  }
+}
