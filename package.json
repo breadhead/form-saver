@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "ci": "yarn types && yarn test && yarn lint",
+    "ci": "yarn types && yarn lint",
     "lint": "tslint {lib}/**/*.ts -c tslint.json",
     "pretty": "prettier --write \"lib/**/*.{ts,tsx}\"",
     "types": "tsc --noEmit",
