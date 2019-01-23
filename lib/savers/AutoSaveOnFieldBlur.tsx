@@ -58,7 +58,7 @@ export default class AutoSaveOnFieldBlur extends React.Component<Props, State> {
     if (Object.keys(difference).length) {
       this.setState({ submitting: true, values })
       setFieldData(blurredField, { saving: true })
-      this.promise = save(difference, values)
+      this.promise = save(values, difference)
       await this.promise
       delete this.promise
       this.setState({ submitting: false })
