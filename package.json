@@ -1,6 +1,6 @@
 {
   "name": "@breadhead/form-saver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "repository": "git@github.com:breadhead/form-saver.git",
   "author": "Igor Kamyshev <igor@kamyshev.me>",
